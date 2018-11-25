@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+<include layout="@layout/topbar"></include>
+    <LinearLayout
+        android:id="@+id/lin_top_linktype"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+        <include layout="@layout/view_linktype"></include>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <starry.wallet.view.SwipeListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeListView"
+       >
+
+    </starry.wallet.view.SwipeListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/lin_common_null"
+        android:visibility="gone"
+    >
+    <TextView
+        android:text="@string/add_addressbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        style="@style/gray66_28_normal"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码至少8位"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="登录"/>
+        <TextView
+            android:id="@+id/tv_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导入DID账号"
+            style="@style/blue577_32_normal"/>
+    </LinearLayout>
+</LinearLayout>

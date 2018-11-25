@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="left|center_vertical"
+                android:layout_margin="15dp"
+                >
+
+        <ImageView
+            android:id="@+id/tv_log_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_zhuan"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_shap_xlnotice_50"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tv_log_from_title"
+                                    android:text="@string/w_send_space"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="left|center_vertical"
+                                    style="@style/gray33_26_normal"
+
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_log_blance"
+                                    android:text="5000 METRO"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="left|center_vertical"
+                                    style="@style/gray33_30_normal"
+                                    />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="@string/transfer_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="left|top"
+                                    style="@style/gray_99_26_normal"
+
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_log_address"
+                                    android:text=""
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:maxWidth="150dp"
+                                    android:ellipsize="middle"
+                                    android:layout_gravity="left|top"
+                                    style="@style/gray_99_26_normal"
+
+                                    />
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:text="@string/wallet_time_space"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="left|center_vertical"
+                                    style="@style/gray_99_26_normal"
+
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_log_time"
+                                    android:text="2018-10-19 22:44"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="left|center_vertical"
+                                    style="@style/gray_99_26_normal"
+                                    />
+                            </TableRow>
+                        </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="right">
+                       <TextView
+                           android:id="@+id/tv_log_again"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/transfer_tryagain"
+                           style="@style/white_30_normal"
+                           android:textSize="14sp"
+                           android:paddingTop="8dp"
+                           android:paddingBottom="8dp"
+                           android:paddingLeft="10dp"
+                           android:paddingRight="10dp"
+                           android:background="@drawable/bg_big_button_green"
+                           android:layout_marginBottom="5dp"
+android:visibility="gone"
+                           />
+                   </LinearLayout>
+
+                    </LinearLayout>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:id="@+id/tr_progress"
+                      android:gravity="center_vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            >
+                            <ProgressBar
+                                style="@style/StyleProgressBarMini"
+                                android:layout_width="95dp"
+                                android:layout_height="2dp"
+                                android:id="@+id/progressBar"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@color/gray_dddddd"
+                                />
+                            <TextView
+                                android:id="@+id/tv_log_state"
+                                android:text="等待打包"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/gray66_22_normal"
+                                android:layout_marginLeft="10dp"/>
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"/>
+
+
+
+</LinearLayout>

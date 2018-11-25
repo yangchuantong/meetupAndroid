@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <include layout="@layout/topbar"></include>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="vertical"
+                android:gravity="left"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        style="@style/gray66_28_normal"
+                        android:textColor="@color/red_cc0000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        style="@style/black_00_28"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="请输入您的真实姓名"
+                    style="@style/gray66_28_normal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        style="@style/gray66_28_normal"
+                        android:textColor="@color/red_cc0000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司名称"
+                        style="@style/black_00_28"/>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/edt_campany"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="请输入您所在的公司名称"
+                    style="@style/gray66_28_normal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职务"
+                        style="@style/black_00_28"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="请输入您的职务名称"
+                    style="@style/gray66_28_normal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        style="@style/gray66_28_normal"
+                        android:textColor="@color/red_cc0000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        style="@style/black_00_28"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:inputType="number"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="请输入您的联系电话"
+                    style="@style/gray66_28_normal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    style="@style/black_00_28"/>
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="请输入您的Eamil"
+                    style="@style/gray66_28_normal"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您的建议"
+                        style="@style/black_00_28"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:inputType="textMultiLine"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:background="@drawable/bg_shap_gray_border"
+                    android:hint="希望您对我们提出宝贵的建议"
+                    style="@style/gray66_28_normal"
+                    />
+                <Button
+                    android:id="@+id/btn_appley"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_shap_green"
+                    android:layout_marginBottom="30dp"
+                    android:text="提交申请"
+                    style="@style/white_32_normal"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        >
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/btn_menu"
+                android:layout_width="35dp"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+        <TextView
+            android:id="@+id/topbar_title"
+            android:text="活动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="@style/black_17_normal"
+            android:gravity="center"
+            />
+
+
+        <TextView
+                android:id="@+id/tv_create"
+                android:text="发起活动"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/white_30_normal"
+                android:textSize="14sp"
+                android:background="@drawable/bg_shap_green25"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <org.elastos.meetup.view.SwipeListView
+                android:id="@+id/swipeListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </org.elastos.meetup.view.SwipeListView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:id="@+id/tv_null"
+            android:text="您可以发起活动"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>

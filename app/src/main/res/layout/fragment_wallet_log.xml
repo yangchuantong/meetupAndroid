@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+<include layout="@layout/topbar"></include>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="25dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_log_banlance"
+      android:text=""
+        style="@style/gray33_22_normal"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:maxLines="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:text="≈"
+            style="@style/gray66_24_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom" />
+        <TextView
+            android:id="@+id/tv_home_unit"
+            android:text="￥"
+            style="@style/gray66_24_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"/>
+        <TextView
+            android:id="@+id/tv_log_totalassets"
+            android:text=""
+            style="@style/gray66_24_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f9f9f9">
+        <TextView
+            android:text="@string/recent_records"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/gray66_24_normal"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            >
+            <!--<starry.wallet.view.SwipeListView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:divider="@null"-->
+                <!--android:layout_gravity="center_horizontal"-->
+
+                <!--android:id="@+id/refreshListView"-->
+                <!--&gt;-->
+
+            <!--</starry.wallet.view.SwipeListView>-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/refreshListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btn_wallet_out"
+                android:layout_weight="1"
+                android:text="@string/wallet_send"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_big_button"
+                android:textAllCaps="false"
+                style="@style/white_32_normal"/>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_wallet_in"
+                android:layout_weight="1"
+                android:text="@string/wallet_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_alert_border"
+                android:textAllCaps="false"
+                style="@style/white_32_normal"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/lin_common_null"
+        android:visibility="gone">
+        <TextView
+            android:text="暂无记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView6"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <include layout="@layout/topbar"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/black_00_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收人" />
+
+            <EditText
+                android:id="@+id/edt_to_address"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/gray33_30_normal"
+                android:background="@drawable/bg_shap_gray_border"
+                android:hint="请输入接收人钱包地址" />
+
+            <TextView
+                style="@style/black_00_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转卖资产" />
+            <ListView
+                android:id="@+id/list_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_sumprice"
+                android:text="总价值0 ELA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_gas"
+                android:text="旷工费 ELA"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/white_32_normal"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_shap_green"
+            android:gravity="center"
+            android:text="确定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/lin_commit_back"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/img_commit_back"
+                    android:layout_width="15dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_back"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_centerInParent="true"
+                android:text="@string/transfer_password"
+                style="@style/gray33_30_normal"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+            <EditText
+                android:id="@+id/wallet_send_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/wallet_password"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textColorHint="@color/gray_999999"
+                style="@style/gray33_26_normal"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/wallet_send_commit"
+                android:text="@string/wallet_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                style="@style/white_32_normal"
+                android:gravity="center"
+                android:background="@drawable/bg_shap_green"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<starry.wallet.view.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lin_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/image_tx"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/tv_address_name"
+                    android:text="@string/create_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/gray33_24_normal"
+                    />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:text="ssss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="150dp"
+                    android:maxLines="1"
+                    android:ellipsize="middle"
+                    android:layout_weight="1"
+                    style="@style/gray_99_22_normal"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/edit"
+            android:text="@string/title_edit"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_width="100dp"
+            android:background="#4a41d9"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+
+        <Button
+            android:id="@+id/delete"
+            android:text="@string/title_delete"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_width="100dp"
+            android:background="#fd4b47"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</starry.wallet.view.SwipeItemLayout>

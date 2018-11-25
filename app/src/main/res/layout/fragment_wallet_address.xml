@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<include layout="@layout/topbar"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:text=""
+                    android:maxLines="1"
+                    style="@style/black_17_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:text=""
+        android:id="@+id/tv_wallet_address"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/gray33_26_normal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/edt_balance"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:background="@null"
+        android:visibility="gone"
+        android:hint="@string/receive_balance"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@drawable/line"/>
+    <ImageView
+        android:id="@+id/img_address_qrcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:id="@+id/btn_wallet_copy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shape_oval_blue"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/qb_icon_copy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:text="@string/copy_receive_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/white_30_normal"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

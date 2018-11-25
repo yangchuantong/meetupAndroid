@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--卡片式图文-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="25dp">
+<ImageView
+    android:id="@+id/img_assets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"/>
+    <TextView
+        android:id="@+id/tv_assets_title"
+        android:text="亦来云生态应用发展座谈会--上海站"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/black_00_32"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:id="@+id/tv_num"
+            android:text="报名数：0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/gray66_32_normal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shap_green_border"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_scan"
+                android:text="扫一扫验证"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/green_33cc66_32"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tv_orders"
+                android:text="查看报名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/green_33cc66_32"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_shap_green_border"
+                />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

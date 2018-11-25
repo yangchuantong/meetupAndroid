@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:id="@+id/lin_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_alert_border"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <ImageView
+                        android:id="@+id/img_jian"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/btn_jian"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <EditText
+                        android:id="@+id/edt_num"
+                        android:text="2"
+                        style="@style/black_00_48"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/bg_shap_gray_border"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:id="@+id/img_jia"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/btn_jia"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_choose_all"
+                    android:text="选择全部"
+                    style="@style/black_00_32"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_shap_gray_ee25"/>
+                <TextView
+                    android:id="@+id/tv_stock"
+                    android:text="剩余：64"
+                    style="@style/gray66_28_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/dialog_onesure"
+                    android:text="@string/wallet_confirm"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_shap_green"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

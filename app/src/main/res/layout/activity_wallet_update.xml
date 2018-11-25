@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/topbar"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin_update_pwd"
+                >
+
+                    <EditText
+                        android:hint="@string/current_password"
+                        android:id="@+id/edt_wallet_oldpwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColorHint="@color/gray_999999"
+                        style="@style/gray33_30_normal"
+                        />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_f0f0f0"/>
+                <EditText
+                    android:hint="@string/wallet_password_new"
+                    android:id="@+id/edt_wallet_newpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColorHint="@color/gray_999999"
+                    style="@style/gray33_30_normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_f0f0f0"/>
+                <EditText
+                    android:hint="@string/wallet_confirm_passowrd"
+                    android:id="@+id/edt_wallet_repwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColorHint="@color/gray_999999"
+                    style="@style/gray33_30_normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_f0f0f0"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password_forget"
+                        android:layout_gravity="center"
+                        style="@style/gray_99_26_normal"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_resetpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password_forget_import"
+                        android:layout_gravity="center"
+                        android:textColor="@color/green_21c3aa"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin_update_name"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:hint="@string/wallet_name"
+                    android:id="@+id/edt_wallet_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

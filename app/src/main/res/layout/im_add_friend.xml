@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/topbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        android:gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好友ID地址"
+            style="@style/black_00_28"/>
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_shap_gray_border"
+            android:hint="请输入好友ID地址"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            style="@style/black_00_28"/>
+
+        <EditText
+            android:id="@+id/edt_remark"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_shap_gray_border"
+            android:hint="请输入备注"
+            />
+
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:background="@drawable/bg_shap_green"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="确定"
+        style="@style/white_32_normal"/>
+</LinearLayout>

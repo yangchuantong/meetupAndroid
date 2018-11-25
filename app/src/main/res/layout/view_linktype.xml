@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup_linktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_btc"
+                android:text="BTC"
+                android:textColor="@color/green_33cc66"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/linktype_selector"
+                android:letterSpacing="0.1"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/radio_eth"
+                android:text="ETH"
+                android:textColor="@color/green_33cc66"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/linktype_selector"
+                android:layout_marginLeft="23dp"
+                android:letterSpacing="0.1"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/radio_ela"
+                android:text="ELA"
+                android:textColor="@color/green_33cc66"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/linktype_selector"
+                android:layout_marginLeft="23dp"
+                android:letterSpacing="0.1"
+                android:button="@null"/>
+        </RadioGroup>
+
+</LinearLayout>
